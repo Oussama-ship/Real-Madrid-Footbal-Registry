@@ -4,7 +4,7 @@
 
 ## Real Madrid  Football registry ##
 
-L’objectif de ce projet est de créer une application permettant enregistrer les informations (C’est-à-dire les moments fort) concernant des matches de football ![alt](/260px-Football_Pallo_valmiina-cropped.jpg) de différents compétition. 
+L’objectif de ce projet est de créer une application permettant enregistrer les informations (C’est-à-dire les moments fort) concernant des matches de football ![alt](./260px-Football_Pallo_valmiina-cropped.jpg) de différents compétition. 
 
 Lors de ces matches les différents buteur , le stade ainsin que l'arbitre de la rencontre seront enregistré. 
 
@@ -73,7 +73,7 @@ Note Moyenne;
 
 ## Diagrame UML
 
-![alt](/UML.jpg)
+![alt](./UML.jpg)
 
 
   
