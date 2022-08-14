@@ -1,0 +1,43 @@
+﻿<Window x:Class="Real_Madrid_Football_Registry.ChangeParam"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Real_Madrid_Football_Registry"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d"
+        Title="Changer Paramétre" Height="450" Width="800">
+    <Grid>
+        <Label Content="Choisis la taille de la police  : " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,60,100,0" > </Label>
+        <ComboBox Height="41" Width="50" HorizontalAlignment="Center" x:Name="choxipolice" Margin="140,60,0,0" ItemsSource="{Binding Police}" VerticalAlignment="Center" >
+           
+        </ComboBox>
+
+        <Label Content="Modif Parramétre" FontSize="17" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0" ></Label>
+        <Label Content="Selection Couleur liste Joueur :" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,95,170"></Label>
+        <syncfusion:ColorPickerPalette Height="30" Width="50" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="140,0,0,180" x:Name="CouleurJoueur"></syncfusion:ColorPickerPalette>
+        <Label Content="Selection Couleur liste Match : " Margin="0,0,95,110" HorizontalAlignment="Center" VerticalAlignment="Center"  ></Label>
+        <syncfusion:ColorPickerPalette HorizontalAlignment="Center" Height="30" VerticalAlignment="Center"  Width="50" Margin="140,0,0,110" Name="CouleurMatch"></syncfusion:ColorPickerPalette>
+        <Label Content="Choix de la couleur de fond : " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,100,40"></Label>
+        <syncfusion:ColorPickerPalette HorizontalAlignment="Center" Height="30" Margin="140,0,0,40" Width="50" x:Name="choixcouleur" ></syncfusion:ColorPickerPalette>
+       
+        <Button Height="41" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ChangeFont" Margin="150,200,0,0">OK</Button>
+        <Button Height="41" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Quitter" Margin="0,200,150,0">Quiiter</Button>
+        
+        
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,55 @@
+﻿<Window x:Class="Real_Madrid_Football_Registry.InfoMatch"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Real_Madrid_Football_Registry"
+        mc:Ignorable="d"
+        Title="InfoMatch" Height="470" Background="SkyBlue" Width="1400">
+    <Grid>
+      
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition>
+                
+            </ColumnDefinition>
+            <ColumnDefinition>
+                
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.ColumnSpan="2">
+            <Label HorizontalAlignment="Center" FontSize="17"  Margin="30" Content="INFOMATCH" FontFamily="Bahnschrift SemiLight Condensed"></Label>
+        </Grid>
+        <Grid Grid.ColumnSpan="2">
+
+            <Label HorizontalAlignment="Center"  FontSize="15"  Margin="0,80,215,340" Content="Buteur du match :"></Label>
+            <ListView Margin="90,115,10,10" HorizontalAlignment="Center" Width="400"  x:Name="listbu">
+
+            </ListView>
+            <Label Content="Liste des joueur :" HorizontalAlignment="Right" Margin="0,80,300,0" FontSize="15" VerticalAlignment="Top"></Label>
+            <ListView   Width="400" x:Name="listjo"  Margin="0,115,10,10"  HorizontalAlignment="Right" ></ListView>
+        </Grid>
+        <Grid Grid.Row="0">
+            <Label Content="Libéllé de la rencontre " Margin="30">
+                
+            </Label>
+            <TextBox HorizontalAlignment="Left" IsReadOnly="True" x:Name="nom" VerticalAlignment="Top" Margin="35,55,0,0" Width="240" Height="30"></TextBox>
+
+            <Label Content="Stade : " Margin="30,100,0,0">
+                
+            </Label>
+
+            <TextBox Height="30" Width="240" x:Name="stade"  IsReadOnly="True" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="35,120"></TextBox>
+
+            <Label Content="Arbitre de la rencontre :" Margin="30 ,155"></Label>
+
+            <TextBox Height="30" Width="240"  x:Name="arbitre" IsReadOnly="True" Margin="35 ,180,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBox>
+
+            <Label Content="Commentaire :"  Margin="30,220,0,0"  ></Label>
+
+            <TextBox Height="140" Width="350" Margin="30,30,0,70" x:Name="comment"  IsReadOnly="True" HorizontalAlignment="left" VerticalAlignment="Bottom">
+                
+            </TextBox>
+            <Button HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,25" Height="40" Click="Button_Click" Width="100">OK</Button>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,26 @@
+﻿<Window x:Class="Real_Madrid_Football_Registry.SupprimerJoueur"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Real_Madrid_Football_Registry"
+        mc:Ignorable="d"
+        Title="Supprimer Joueur" Height="450" Width="800">
+    <Grid>
+
+        <Grid Margin="0,50,0,0"   >
+            <Grid.Background    >
+                <ImageBrush  Stretch="None"  AlignmentX="Center"  AlignmentY="Top" ImageSource="C:\Users\oussa\OneDrive\Bureau\labo-final-Oussama-ship\Ressource\RealMadrid1.jpg" Viewport="0,0,1,1" ></ImageBrush>
+            </Grid.Background>
+        </Grid>
+
+        <ComboBox x:Name="ListeJo"  Height="30" Width="200">
+          
+        </ComboBox>
+
+        <Button Height="60" Width="150" Click="Button_Click_1"  Margin="0,200,290,0">Annuler</Button>
+        <Button Height="60" Width="150" Margin="290,200,0,0" Click="Button_Click" Content="supprimer&#xD;&#xA;"/>
+    </Grid>
+    
+
+</Window>

@@ -1,0 +1,89 @@
+﻿<Window x:Class="Real_Madrid_Football_Registry.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Real_Madrid_Football_Registry"
+        mc:Ignorable="d"
+        Title="Real Madrid Football Registry" Height="800" Width="1350">
+    <Grid>
+
+        
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+
+       
+
+        <Menu Grid.ColumnSpan="2" Height="30" VerticalAlignment="top">
+            <MenuItem Height="30px"  Header="Gestion Coupe/Joueur">
+                <MenuItem Header="Gestion Joueur " >
+                    <MenuItem Header="ajouter joueur"  Click="Ajouterjoueur_MenuItem_Click" />
+                    <MenuItem Header="supprimer joueur" Click="SupprimerJoueur_MenuItem_Click"/>
+                    <MenuItem Header="modifier joueur" Click="ModifierJoueur_MenuItem_Click" />
+                </MenuItem>
+
+                <MenuItem Header="Gestion Match " >
+                    <MenuItem Header="supprimer Match"  Click="SupprimerMatch"/>
+                </MenuItem>
+
+            </MenuItem>
+
+            <Separator />
+
+            <MenuItem Header="Parrametre" >
+                <MenuItem Header="Changer couleur de fond" Click="ChangeCouleur" />
+                <Separator />
+                <MenuItem Header="exit"  Click="EXIT"/>
+            </MenuItem>
+
+
+        </Menu>
+
+        <Grid Grid.Column="0" Margin="0,4,0,0">
+
+            <Button Height="41" Width="150" Click="AjouterMatch_Button_Click" HorizontalAlignment="Center"  VerticalAlignment="Top" Margin="200" >Ajouter Match</Button>
+            <Grid  Height="400" VerticalAlignment="Bottom" >
+                <DataGridCell  BorderBrush="Black">
+                    <Grid  HorizontalAlignment="Center" VerticalAlignment="Center" Width="400" Height="400">
+                        <Grid.Background >
+                            <ImageBrush  Stretch="None" AlignmentX="Left"  AlignmentY="Top" ImageSource="C:\Users\oussa\OneDrive\Bureau\labo-final-Oussama-ship\Ressource\RealMadrid.jpg"  Viewport="0,0,1,1" ></ImageBrush>
+                        </Grid.Background>
+                    </Grid>
+                </DataGridCell>
+            </Grid>
+
+        </Grid>
+        <Grid Grid.Column="2">
+            <TabControl TabStripPlacement="Top" Margin="0,25,0,0">
+                <TabItem Header="Match">
+                    <Grid Background="AliceBlue">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="176*"/>
+                            <ColumnDefinition Width="493*"/>
+                        </Grid.ColumnDefinitions>
+                        <ListView Height="730" MouseDoubleClick="infoMatch"   Background="Transparent" VerticalAlignment="Top" x:Name="list" SelectedItem="{Binding CurrentMatch  }" ItemsSource="{Binding Matches}" IsSynchronizedWithCurrentItem="True" Grid.ColumnSpan="2" >
+
+
+                        </ListView>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Joueur">
+                    <Grid Background="AntiqueWhite">
+                        <ListView Height="730" Background="Transparent" x:Name="list2" IsSynchronizedWithCurrentItem="True" SelectedItem="{Binding CurrentJoueur}" MouseDoubleClick="infoJoueur"   VerticalAlignment="Top" ItemsSource="{Binding Joueurs}">
+
+
+                        </ListView>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+
+        </Grid>
+
+
+
+    </Grid>
+</Window>

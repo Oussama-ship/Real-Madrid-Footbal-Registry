@@ -1,0 +1,84 @@
+﻿<Window x:Class="Real_Madrid_Football_Registry.infoJoueur"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Real_Madrid_Football_Registry"
+        mc:Ignorable="d"
+        Title="InfoJoueur" Background="SkyBlue" Height="700" Width="1000">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.ColumnSpan="2">
+            <Label FontSize="17" HorizontalAlignment="Center" Margin="20" Content="INFOJOUEUR "></Label>
+
+            <Grid Margin="0,70,300,0">
+            <Grid.Background >
+                <ImageBrush  Stretch="None"  AlignmentX="Right"  AlignmentY="Top" ImageSource="C:\Users\oussa\OneDrive\Bureau\labo-final-Oussama-ship\Ressource\InfoJ.jpg" Viewport="0,0,1,1" ></ImageBrush>
+            </Grid.Background>
+            </Grid>
+
+        </Grid>
+        <Grid Grid.Row="0">
+           
+
+            <Grid>
+                <Label FontSize="17" Height="30" Margin="50,0,0,350" Content="Nom :"></Label>
+            </Grid>
+            <Grid>
+                <TextBox HorizontalAlignment="Left" IsReadOnly="True" x:Name="nom" Margin="60,0,0,290" Height="30" Width="200"></TextBox>
+            </Grid>
+
+            <Grid>
+                <Label FontSize="17" Margin="50,0,0,200" Height="30" Content="Date de Naissance :"></Label>
+            </Grid>
+            <Grid>
+                <TextBox HorizontalAlignment="Left" IsReadOnly="True" x:Name="ddn" Margin="60,0,0,140" Height="30" Width="200"></TextBox>
+            </Grid>
+
+            <Grid>
+                <Label FontSize="17" Margin="50,0,0,40" Height="30" Content="Numero :"></Label>
+            </Grid>
+            <Grid>
+                <TextBox HorizontalAlignment="Left" IsReadOnly="True" x:Name="numero" Margin="60,20,0,0" Height="30" Width="200"></TextBox>
+            </Grid>
+
+            <Grid>
+                <Label FontSize="17" Margin="50,110,0,0" Height="30" Content="Poste :"></Label>
+            </Grid>
+            <Grid>
+                <TextBox HorizontalAlignment="Left" IsReadOnly="True" Margin="60,185,0,0" x:Name="poste" Height="30" Width="200"></TextBox>
+                
+            </Grid>
+            <Grid>
+                <Label Content="Nombre but Marqué :" Grid.Column="0" HorizontalAlignment="Left" Height="30" FontSize="15"  Margin="50,270,0,0"></Label> 
+            </Grid>
+
+
+            <Grid>
+                <TextBox IsReadOnly="True" HorizontalAlignment="Left" Grid.Column="0" Height="30" Width="50"  x:Name="nbbut" Margin="220,300,0,0" ></TextBox>
+            </Grid>
+            <Button Height="40" Click="Button_Click"   VerticalAlignment="Bottom" Margin="0,0,0,80"   Width="100">OK</Button>
+        </Grid>
+        <Grid  Grid.ColumnSpan="2">
+            <ListView x:Name="ListBut" Height="400" Width="300" Margin="40,175,00,0"/>
+        </Grid>
+
+        <Grid Grid.Column="1" >
+
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="17" Content="Liste Match joué :
+                   " Margin="120,00,20,250"></Label>
+        </Grid>
+
+        <Grid Grid.Column="0" >
+
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="17" Content="Liste but marqué : " Margin="350,00,0,250"></Label>
+        </Grid>
+
+        <Grid  Grid.ColumnSpan="2">
+            <ListView x:Name="ListJoueur" Height="400" Width="300" HorizontalAlignment="Right" Margin="0,175,10,0"/>
+        </Grid>
+    </Grid>
+</Window>
