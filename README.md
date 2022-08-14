@@ -71,12 +71,7 @@ Note Moyenne;
   La minute du match auquel il a marquer 
 
 
-## Diagrame UML
- 
-![alt](UML.jpg)
 
-
-  
   
   
 
