@@ -73,9 +73,7 @@ Note Moyenne;
 
 ## Diagrame UML
  
-  ![alt](./260px-Football_Pallo_valmiina-cropped.jpg) de différents compétition. 
-
-![alt](./UML.jpg)
+![alt](UML.jpg)
 
 
   
