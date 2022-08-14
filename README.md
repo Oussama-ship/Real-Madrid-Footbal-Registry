@@ -73,7 +73,7 @@ Note Moyenne;
 
 ## Diagrame UML
 
-![alt](./UML.jpg)
+(./UML.jpg)
 
 
   
